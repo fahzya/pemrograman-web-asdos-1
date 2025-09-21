@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="form-data-mahasiswa.css" />
+    <title>Form Data Mahasiswa</title>
+  </head>
+
+  <body>
+    <div class="bubbles">
+      <span style="--i: 11"></span>
+      <span style="--i: 12"></span>
+      <span style="--i: 24"></span>
+      <span style="--i: 10"></span>
+      <span style="--i: 14"></span>
+      <span style="--i: 23"></span>
+      <span style="--i: 18"></span>
+      <span style="--i: 16"></span>
+      <span style="--i: 19"></span>
+      <span style="--i: 22"></span>
+      <span style="--i: 25"></span>
+      <span style="--i: 18"></span>
+      <span style="--i: 21"></span>
+      <span style="--i: 15"></span>
+      <span style="--i: 13"></span>
+      <span style="--i: 26"></span>
+      <span style="--i: 17"></span>
+      <span style="--i: 13"></span>
+      <span style="--i: 28"></span>
+    </div>
+
+    <div class="container">
+      <h3 class="heading">Form Data Mahasiswa</h3>
+
+      <form method="GET" action="biodata.html">
+        <div class="form-group">
+          <div style="flex: 1">
+            <label>Nama Lengkap</label>
+            <input type="text" name="nama" required placeholder="Masukkan nama lengkap anda..." />
+          </div>
+
+          <div style="flex: 1">
+            <label>Nomor Induk Mahasiswa</label>
+            <input type="text" name="nim" required placeholder="Masukkan NIM anda..." />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div style="flex: 1">
+            <label>Fakultas</label>
+            <select name="fakultas" required>
+              <option value="" disabled selected>Pilih Fakultas</option>
+              <option value="Fakultas Teknologi Informasi">Fakultas Teknologi Informasi</option>
+              <option value="Fakultas Ekonomi dan Bisnis">Fakultas Ekonomi dan Bisnis</option>
+              <option value="Fakultas Ilmu Komunikasi">Fakultas Ilmu Komunikasi</option>
+              <option value="Fakultas Seni Rupa dan Desain">Fakultas Seni Rupa dan Desain</option>
+              <option value="Fakultas Psikologi">Fakultas Psikologi</option>
+              <option value="Fakultas Ilmu Pendidikan">Fakultas Ilmu Pendidikan</option>
+              <option value="Fakultas Hukum">Fakultas Hukum</option>
+            </select>
+          </div>
+          <div style="flex: 1">
+            <label>Program Studi</label>
+            <select name="prodi" required>
+              <option value="" disabled selected>Pilih Program Studi</option>
+              <option value="Teknik Informatika">Teknik Informatika</option>
+              <option value="Sistem Informasi">Sistem Informasi</option>
+              <option value="Teknologi Informasi">Bisnis Digital</option>
+              <option value="Rekayasa Perangkat Lunak">DKV</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div style="flex: 1">
+            <label>Email</label>
+            <input type="email" name="email" required placeholder="Masukkan alamat email anda..." />
+          </div>
+          <div style="flex: 1">
+            <label>No.Telepon</label>
+            <input type="tel" name="telepon" required placeholder="Masukkan nomor ponsel anda..." />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div style="flex: 1">
+            <label>Tanggal Lahir</label>
+            <input type="date" name="tanggalLahir" required />
+          </div>
+          <div style="flex: 1">
+            <label>Umur</label>
+            <input type="number" name="umur" min="17" max="35" required placeholder="Masukkan umur anda..." />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div style="flex: 1">
+            <label>Jenis Kelamin</label>
+            <div class="radio-group">
+              <label class="radio-label">
+                <input type="radio" name="jenis_kelamin" value="Laki-Laki" required />
+                Laki-Laki
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="jenis_kelamin" value="Perempuan" />
+                Perempuan
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div style="flex: 1">
+            <label>Hobi</label>
+            <div class="checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" name="membaca" />
+                Membaca
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="olahraga" />
+                Olahraga
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="musik" />
+                Musik
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="traveling" />
+                Traveling
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="gaming" />
+                Gaming
+              </label>
+              <label class="checkbox-label">
+                <input type="checkbox" name="memasak" />
+                Memasak
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div style="flex: 1">
+            <label>Alamat</label>
+            <textarea name="alamat" rows="3" required placeholder="Masukkan alamat lengkap anda.."></textarea>
+          </div>
+        </div>
+
+        <div class="button-group">
+          <button class="button kirim" type="submit">Kirim Data</button>
+          <button class="button reset" type="reset">Reset</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
